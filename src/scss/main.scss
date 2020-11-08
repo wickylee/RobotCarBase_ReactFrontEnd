@@ -1,0 +1,70 @@
+@import "normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+body {
+    font: 1em sans-serif;
+    background-color: rgb(212, 198, 198);
+    margin: 0px;
+    padding: 10px;
+    color: rgb(22, 33, 56);
+}
+
+.nabibase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    padding: 10px;
+
+    & .app-titel{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 4px;
+        font-weight: bold;
+        background-color: darkgray;
+    }
+
+    & .control-panel{
+        width: 100%;
+        height: 360px;
+        border: 1px solid slategrey;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        & .diagonal-button{
+            position: absolute;
+            margin: 2px;
+        }
+
+        & .side-button{
+            position: absolute;
+            top: calc((100% / 2) - 20px);
+            margin: 2px;
+        }
+
+        & .main-joystick{
+        margin: 10px;
+        padding: 30px;
+    }
+    }
+
+    
+
+    & .movement-log{
+        font-size: 0.8em;
+        width: 100%;
+        height: 120px;
+        padding: 4px;
+        background-color: darkgray;
+        max-height: 120px;
+        overflow: hidden;
+        overflow-y: auto;
+        // color: #1e3452;
+    }
+}
